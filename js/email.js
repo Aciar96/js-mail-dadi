@@ -18,11 +18,13 @@ console.table(emails);
 //chiedo all' utente un email (prompt)
 const quest = prompt('inserisci un email', 'solitoignoto@io.com')
 
-
+//controllo che il nome scelto sia nella lista 
 for (let i = 0; i < emails.length; i++){
     console.log(i)
- if(quest !== emails.length[0] || quest !==emails.length[1] || quest !==emails.length[2]){
+ //se l' email è presente stampo  il permesso in console
+    if(quest !== emails.length[0] || quest !==emails.length[1] || quest !==emails.length[2]){
      console.log('non puoi accedere')
+     //se l' email non è presente stampo il divieto in console 
  }else if ( quest === emails.length[0]  || quest === emails.length[1]|| quest === emails.length[2])
   console.log('puoi accedere')
 }
