@@ -17,14 +17,17 @@ const emails = ['pinco.pallino@io.com', 'solitoignoto@io.com', 'umbrella@io.com'
 console.table(emails);
 //chiedo all' utente un email (prompt)
 const quest = prompt('inserisci un email', 'solitoignoto@io.com')
+console.log(emails);
 
+let message = 'non trovato'
 //controllo che il nome scelto sia nella lista 
 for (let i = 0; i < emails.length; i++){
+    //se l' email non è presente stampo il divieto in console 
     console.log(i)
- //se l' email è presente stampo  il permesso in console
-    if(quest !== emails.length[0] || quest !==emails.length[1] || quest !==emails.length[2]){
-     console.log('non puoi accedere')
-     //se l' email non è presente stampo il divieto in console 
- }else if ( quest === emails.length[0]  || quest === emails.length[1]|| quest === emails.length[2])
-  console.log('puoi accedere')
+    if(quest === emails[i] ){
+        message = 'puoi accedere'
+        
+        //se l' email è presente stampo  il permesso in console
+    }
 }
+console.log(message)
