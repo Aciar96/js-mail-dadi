@@ -19,15 +19,15 @@ console.table(emails);
 const quest = prompt('inserisci un email', 'solitoignoto@io.com')
 console.log(emails);
 
+//se l' email non è presente stampo il divieto in console 
 let message = 'non trovato'
 //controllo che il nome scelto sia nella lista 
 for (let i = 0; i < emails.length; i++){
-    //se l' email non è presente stampo il divieto in console 
+    //se l' email è presente stampo  il permesso in console
     console.log(i)
     if(quest === emails[i] ){
         message = 'puoi accedere'
         
-        //se l' email è presente stampo  il permesso in console
     }
 }
 console.log(message)
